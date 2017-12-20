@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{black}
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\color{blue}{#1}} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={},leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\Cambridge}{Cambridge, MA}
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \multirow{2}{*}{\textbf{\huge Noam Buckman}} & \href{nbuckman@mit.edu}{nbuckman@mit.edu}\\
+   & 248-302-4327 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology}{Cambridge, MA}
+      {M.S. in Mechanical Engineering; GPA: 4.7/5.0}{Feb. 2016 -- Present}
+      \resumeItemListStart
+	      \resumeItem{Courses}{Autonomy \& Decision Making, Information Theory, Autonomous Vehicles, Estimation \& Learning, Feedback Control Systems}
+	      \resumeItem{Awards}{National Defense Science and Engineering Graduate (NDSEG) Fellowship: 4 years, \$350,000}
+	  \resumeItemListEnd
+    \resumeSubheading
+      {Massachusetts Institute of Technology}{Cambridge, MA}
+      {B.S. in Mechanical Engineering, Mathematics;  GPA: 4.8/5.0}{Aug. 2012 -- Feb. 2016}
+    \resumeItemListStart
+    \resumeItem{Courses}{Nonlinear Dynamics, Product Design, Algorithms, Computation Structures, Discrete Applied Math}
+    \resumeItem{Honors}{MIT Tau Beta Pi Engineering Honor Society, MIT Pi Tau Sigma Mechanical Engineering Honor Society}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{Software}{Python, C++, Java, ROS, Git, MATLAB, R, Web Development (HTML/CSS, PHP)}
+\resumeSubItem{Mechanical Design/Engineering:}
+{SolidWorks, Arduino, Raspberry Pi, Electronics/Circuits, CFD, Machine Trained  (Mill, Lathe, 3D Printing, Laser Cutter)}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {MIT Laboratory for Information \& Decision Systems}{\Cambridge}
+      {Graduate Research Assistant, \textit{Adviser: Prof. Jonathan How}}{Sep 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Wireless Broadcasting for Robot Teams}
+          {Experimentation with Raspberry Pi nodes to categorize communication limitations and strategies for distributed robot teams; researching inter-vehicle cooperation for high-speed consensus and task allocation}
+        \resumeItem{Time-Sensitive Task Allocation}
+          {Developing distributed task allocation algorithm for AUV's servicing dynamic and time-sensitive tasks based on Consensus Based Bundle Algorithm (CBBA)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Woobo, Inc.}{\Cambridge}
+      {Hardware/Robotics Intern}{Summer 2016}
+      \resumeItemListStart
+        \resumeItem{Mechatronic Design}
+          {Lead on electronics for interactive robotic companion, created custom circuits for I/O of the robot and mechanical actuation}
+        \resumeItem{Electronics Software Integration}
+          {Developed library to control multiple sensors, LEDs, and motors to communicate with Android app backbone using IOIO microcontroller}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {2.001/2.01: Mechanics and Materials I}{}
+      {Graduate Teaching Assistant}{Feb. 2016 - July 2016 }
+      %{Teaching Assistant}{April 2013 - July 2016 }
+      \resumeItemListStart
+        \resumeItem{Graduate Residential TA}
+          {Held weekly office hours, prepared homework problems and quizzes on MITx (60 students)}
+%        \resumeItem{2.01x QA Team Manager, Discussion Moderator, Content Editor}
+%          {Managed team of undergraduate Quality Assurance team (3 MIT students) for online EdX course; Edited course material and moderated online discussion forums }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MIT Experimental Hydrodynamics Lab}{}
+      {Undergraduate Research Assistant, \textit{Adviser: Prof. Alex Techet}}{June 2015 - Dec 2015}
+      \resumeItemListStart
+        \resumeItem{Fish Impulse Model}
+          {Examined impulse model using OpenFoam CFD software, results presented at APS Division of Fluid Dynamics Conference}
+        \resumeItem{Computational Fluid Dynamics Simulations}
+          {Learned and wrote guide to OpenFoam, created synthetic datasets that can be used to validate experimental methods}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+	 {MIT Vortical Flow Lab}{}
+      {Undergraduate Research Assistant, \textit{Adviser: Prof. Dick Yue}}{June 2014 - May 2015}
+     \resumeItemListStart
+		 \resumeItem{Mechanical Design \& Controls of Autonomous Buoy}
+	      {Designed, tested, and built buoy exterior design to minimize energy consumption, and implemented GPS sensor suite and motor controls with Adruino Mega}
+		 \resumeItem{Multi-robot Offboard Control and Communication}
+		  {Developed Python GUI for multi-robot monitoring and communication with XBee modules for effective real-time deployment}
+    \resumeItemListEnd      
+
+  \resumeSubHeadingListEnd
+
+\section{Service and Leadership}
+\resumeSubHeadingListStart
+\resumeSubItem{MIT OpenCourseWare Faculty Advisory Committee}{Graduate, Undergraduate Member\hfill June 2015-present}
+\resumeSubItem{MIT Presidential Committee on Future of OCW}{Member \hfill June 2016- Dec 2016}
+\resumeSubItem{MIT Graduate Hillel}{Treasurer \hfill Nov 2016-present}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
