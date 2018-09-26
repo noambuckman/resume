@@ -57,6 +57,13 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\mitSubheading}[2]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -78,46 +85,52 @@
   \multirow{2}{*}{\textbf{\huge Noam Buckman}} & \href{nbuckman@mit.edu}{nbuckman@mit.edu}\\
    & 248-302-4327 \\
 \end{tabular*}
-
+%Graduate researcher with passion for autonomous ground \& aerial vehicles and large multi-robot teams. Experience applying math and algorithmic skills to hard problems: dealing with real-complex systems in dynamic \& uncertain environments.  Very strong coding and building skills, applied to robotics hardware and simulations.
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Massachusetts Institute of Technology}{Cambridge, MA}
-      {M.S. in Mechanical Engineering; GPA: 4.7/5.0}{Feb. 2016 -- Present}
+  	\resumeSubheading
+     {Massachusetts Institute of Technology}{Cambridge, MA}  	
+  	{Ph.D. in Mechanical Engineering (Robotics); Minor: Computer Science GPA: -/5.0}{Sep. 2018 -- present}
+\resumeItemListStart      
+\resumeItem{Awards}{National Defense Science and Engineering Graduate (NDSEG) Fellowship}      
+\resumeItemListEnd        	
+    \mitSubheading
+%      {Massachusetts Institute of Technology}{Cambridge, MA}
+      {M.S. in Mechanical Engineering (Robotics); GPA: 4.7/5.0}{Feb. 2016 -- Sep. 2018}      
       \resumeItemListStart
-	      \resumeItem{Courses}{Autonomy \& Decision Making, Information Theory, Autonomous Vehicles, Estimation \& Learning, Feedback Control Systems, Dynamics}
-	      \resumeItem{Awards}{National Defense Science and Engineering Graduate (NDSEG) Fellowship: 4 years, \$350,000}
+	      \resumeItem{Courses}{Autonomy \& Decision Making, Autonomous Vehicles, Estimation \& Learning, Information Theory}
+	      \resumeItem{Thesis}{Decentralized Task Allocation for Dynamic, Time-Sensitive Tasks}
 	  \resumeItemListEnd
-    \resumeSubheading
-      {Massachusetts Institute of Technology}{Cambridge, MA}
-      {B.S. in Mechanical Engineering, Mathematics;  GPA: 4.8/5.0}{Aug. 2012 -- Feb. 2016}
+    \mitSubheading
+%      {Massachusetts Institute of Technology}{Cambridge, MA}
+      {B.S. in Mathematics and Mechanical Engineering, Minor: Economics;  GPA: 4.8/5.0}{Aug. 2012 -- Feb. 2016}
     \resumeItemListStart
-    \resumeItem{Courses}{Nonlinear Dynamics, Product Design, Algorithms, Computation Structures, Discrete Applied Math}
-    \resumeItem{Honors}{MIT Tau Beta Pi Engineering Honor Society, MIT Pi Tau Sigma Mechanical Engineering Honor Society}
+    \resumeItem{Courses}{Algorithms, Computation Structures, Discrete Applied Math, Nonlinear Dynamics, Product Design, }
+    \resumeItem{Honors}{Tau Beta Pi Engineering Honor Society, Pi Tau Sigma Mechanical Engineering Honor Society}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-\section{Technical Skills}
-\resumeSubHeadingListStart
-\resumeSubItem{Software}{Python, C++, Java, ROS, Git, MATLAB, R, Web Development (HTML/CSS, PHP)}
-\resumeSubItem{Mechanical Design/Engineering:}
-{SolidWorks, Arduino, Raspberry Pi, Electronics/Circuits, CFD, Machine Trained  (Mill, Lathe, 3D Printing, Laser Cutter)}
-\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-
+	\resumeSubheading
+	{Aurora Flight Sciences}{\Cambridge}
+	{Autonomy Intern}{Summer 2018}
+	\resumeItemListStart
+	\resumeItem{Multivehicle Autonomous Coordination}
+	{Developed and implemented planning algorithms for coordinating future network of air taxis in C++}
+   \resumeItemListEnd
+   
     \resumeSubheading
-      {MIT Aerospace Controls Lab / Lab. for Information \& Decision Systems}{\Cambridge}
-      {Graduate Research Assistant, \textit{Adviser: Prof. Jonathan How}}{Sep 2016 - Present}
+      {MIT Laboratory for Information \& Decision Systems}{\Cambridge}
+      {Graduate Research Assistant, \textit{Adviser: Prof. Jonathan How}}{Sep 2016 - June 2018}
       \resumeItemListStart
         \resumeItem{Wireless Broadcasting for Robot Teams}
-          {Experimentation with Raspberry Pi nodes to categorize communication limitations and strategies for distributed robot teams; researching inter-vehicle cooperation for high-speed consensus and task allocation}
-        \resumeItem{Time-Sensitive Task Allocation}
-          {Developing distributed task allocation algorithm for AUV's servicing dynamic and time-sensitive tasks based on Consensus Based Bundle Algorithm (CBBA)}
+          {Studied effects of mesh communication on team-wide consensus using Raspberry Pi's (Presented at RSS 2018:  Real Communication in Wild Workshop)}
+        \resumeItem{Decentralized Dynamic Task Allocation}
+          {Created decentralized algorithm--CBBA with Partial Replanning-- that can allocate tasks online with provable convergence.  Convergence and optimality tested on homemade Python simulator and Raspberry Pi's.  (Accepted at AAAI Guidance, Navagation \& Control, Jan. 2019)}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -127,40 +140,49 @@
         \resumeItem{Mechatronic Design}
           {Lead on electronics for interactive robotic companion, created custom circuits for I/O of the robot and mechanical actuation}
         \resumeItem{Electronics Software Integration}
-          {Developed library to control multiple sensors, LEDs, and motors to communicate with Android app backbone using IOIO microcontroller}
+          {Developed Java library to control multiple sensors, LEDs, and motors to communicate with Android app backbone using IOIO microcontroller}
       \resumeItemListEnd
 
     \resumeSubheading
-      {2.001/2.01: Mechanics and Materials I}{}
-      {Graduate Teaching Assistant}{Feb. 2016 - July 2016 }
+      {MIT Department of Mechanical Engineering}{}
+      {Teaching Assistant}{Feb. 2013 - July 2016 }
       %{Teaching Assistant}{April 2013 - July 2016 }
       \resumeItemListStart
         \resumeItem{Graduate Residential TA}
           {Held weekly office hours, prepared homework problems and quizzes on MITx (60 students)}
-%        \resumeItem{2.01x QA Team Manager, Discussion Moderator, Content Editor}
-%          {Managed team of undergraduate Quality Assurance team (3 MIT students) for online EdX course; Edited course material and moderated online discussion forums }
+        \resumeItem{2.01x QA Team Manager, Discussion Moderator, Content Editor}
+          {Managed team of undergraduate Quality Assurance team (3 MIT students) for online EdX course; Edited course material and moderated online discussion forums }
       \resumeItemListEnd
 
-    \resumeSubheading
-      {MIT Experimental Hydrodynamics Lab}{}
-      {Undergraduate Research Assistant, \textit{Adviser: Prof. Alex Techet}}{June 2015 - Dec 2015}
-      \resumeItemListStart
-        \resumeItem{Fish Impulse Model}
-          {Examined impulse model using OpenFoam CFD software, results presented at APS Division of Fluid Dynamics Conference}
-        \resumeItem{Computational Fluid Dynamics Simulations}
-          {Learned and wrote guide to OpenFoam, created synthetic datasets that can be used to validate experimental methods}
-      \resumeItemListEnd
+%    \resumeSubheading
+%      {MIT Experimental Hydrodynamics Lab}{}
+%      {Undergraduate Research Assistant, \textit{Adviser: Prof. Alex Techet}}{June 2015 - Dec 2015}
+%      \resumeItemListStart
+%        \resumeItem{Fish Impulse Model}
+%          {Examined impulse model using OpenFoam CFD software, results presented at APS Division of Fluid Dynamics Conference}
+%        \resumeItem{Computational Fluid Dynamics Simulations}
+%          {Learned and wrote guide to OpenFoam, created synthetic datasets that can be used to validate experimental methods}
+%      \resumeItemListEnd
       
     \resumeSubheading
-	 {MIT Vortical Flow Lab}{}
+	 {MIT Department of Mechanical Engineering}{}
       {Undergraduate Research Assistant, \textit{Adviser: Prof. Dick Yue}}{June 2014 - May 2015}
      \resumeItemListStart
-		 \resumeItem{Mechanical Design \& Controls of Autonomous Buoy}
-	      {Designed, tested, and built buoy exterior design to minimize energy consumption, and implemented GPS sensor suite and motor controls with Adruino Mega}
-		 \resumeItem{Multi-robot Offboard Control and Communication}
-		  {Developed Python GUI for multi-robot monitoring and communication with XBee modules for effective real-time deployment}
+     	\resumeItem{Autonomous Buoys for Persistent Surveillance}
+	     {Designed, tested, and built buoy exterior design to minimize energy consumption, and implemented GPS sensor suite and motor controls with Adruino Mega.  Created Python GUI for multi-robot monitoring and communication with XBee modules for effective real-time deployment}
+%		 \resumeItem{Mechanical Design \& Controls of Autonomous Buoy}
+%	      {Designed, tested, and built buoy exterior design to minimize energy consumption, and implemented GPS sensor suite and motor controls with Adruino Mega}
+%		 \resumeItem{Multi-robot Offboard Control and Communication}
+%		  {Developed Python GUI for multi-robot monitoring and communication with XBee modules for effective real-time deployment}
     \resumeItemListEnd      
 
+  \resumeSubHeadingListEnd
+  
+  \section{Technical Skills}
+  \resumeSubHeadingListStart
+   \resumeSubItem{Software} C++ (fluent), Python (fluent), Java (proficient), MATLAB (proficient), Linux, ROS, Git,  LaTeX
+  \resumeSubItem{Mechanical}
+  {SolidWorks, Arduino, Raspberry Pi, Electronics/Circuits, CFD, Machine Trained}
   \resumeSubHeadingListEnd
 
 \section{Service and Leadership}
