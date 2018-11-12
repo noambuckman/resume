@@ -74,6 +74,7 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \newcommand{\Cambridge}{Cambridge, MA}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -91,7 +92,7 @@
 \section{Education}
   \resumeSubHeadingListStart
   	\resumeSubheading
-     {Massachusetts Institute of Technology}{Cambridge, MA}  	
+     {Massachusetts Institute of Technology}{\Cambridge}  	
   	{Ph.D. in Mechanical Engineering (Robotics); Minor: Computer Science GPA: -/5.0}{Sep. 2018 -- present}
 \resumeItemListStart      
 \resumeItem{Awards}{National Defense Science and Engineering Graduate (NDSEG) Fellowship}      
@@ -115,6 +116,14 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+	\resumeSubheading
+	{MIT Distributed Robotics Lab}{\Cambridge}
+	{PhD Student}{September 2018 - present}
+	\resumeItemListStart
+	\resumeItem{Coordination with Implicit Communication for Self-Driving Cars}
+	{Researching hybrid decentralized-centralized algorithm, autonomous-human systems, and system wide safety and optimization for self-driving applications}
+	\resumeItemListEnd
+
 	\resumeSubheading
 	{Aurora Flight Sciences}{\Cambridge}
 	{Autonomy Intern}{Summer 2018}
@@ -143,16 +152,16 @@
           {Developed Java library to control multiple sensors, LEDs, and motors to communicate with Android app backbone using IOIO microcontroller}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {MIT Department of Mechanical Engineering}{}
-      {Teaching Assistant}{Feb. 2013 - July 2016 }
-      %{Teaching Assistant}{April 2013 - July 2016 }
-      \resumeItemListStart
-        \resumeItem{Graduate Residential TA}
-          {Held weekly office hours, prepared homework problems and quizzes on MITx (60 students)}
-        \resumeItem{2.01x QA Team Manager, Discussion Moderator, Content Editor}
-          {Managed team of undergraduate Quality Assurance team (3 MIT students) for online EdX course; Edited course material and moderated online discussion forums }
-      \resumeItemListEnd
+%    \resumeSubheading
+%      {MIT Department of Mechanical Engineering}{}
+%      {Teaching Assistant}{Feb. 2013 - July 2016 }
+%      %{Teaching Assistant}{April 2013 - July 2016 }
+%      \resumeItemListStart
+%        \resumeItem{Graduate Residential TA}
+%          {Held weekly office hours, prepared homework problems and quizzes on MITx (60 students)}
+%        \resumeItem{2.01x QA Team Manager, Discussion Moderator, Content Editor}
+%          {Managed team of undergraduate Quality Assurance team (3 MIT students) for online EdX course; Edited course material and moderated online discussion forums }
+%      \resumeItemListEnd
 
 %    \resumeSubheading
 %      {MIT Experimental Hydrodynamics Lab}{}
@@ -180,7 +189,7 @@
   
   \section{Technical Skills}
   \resumeSubHeadingListStart
-   \resumeSubItem{Software} C++ (fluent), Python (fluent), Java (proficient), MATLAB (proficient), Linux, ROS, Git,  LaTeX
+   \resumeSubItem{Software} \CC (fluent), Python (fluent), Java (proficient), MATLAB (proficient), Linux, ROS, Git,  LaTeX
   \resumeSubItem{Mechanical}
   {SolidWorks, Arduino, Raspberry Pi, Electronics/Circuits, CFD, Machine Trained}
   \resumeSubHeadingListEnd
